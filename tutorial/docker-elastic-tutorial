@@ -1,0 +1,5 @@
+http://192.168.1.115:5601
+http://192.168.1.115:5601/app/kibana#/management/elasticsearch/index_management/indices?_g=()
+http://127.0.0.1:8069/web/#action=32&model=ir.module.module&view_type=kanban&menu_id=5
+fluentd-*-
+fluentd-*

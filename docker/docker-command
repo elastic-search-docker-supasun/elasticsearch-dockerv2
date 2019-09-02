@@ -1,0 +1,30 @@
+docker ps
+docker ps -a
+docker start kong
+docker service
+docker service ls
+docker service scale odo_db=0 <===ซื่อname
+docker service scale odo_db=1 <===ซื่อname
+
+docker service update odo_db --publish-rm 5432:5432 <=====ซื่อname กับซื่อport
+
+--------------------เรียนล่าสุด-------------------------------
+docker ps <== ดุทั้งหมด
+docker ps -a <== ดูทั้งหมดรวมไฟล์ที่ยังไม่ทำงานด้วย
+docker version <== ดู version
+docker
+docker run --name test -p 9090:80 nginx <==สร้างcontainer ซื่อtest port 9090
+docker start test <==รัน containers test
+docker help
+docker ps --help
+docker update --help
+docker images <==ดูdocker image
+docker images -a <==ดูdocker image รวมimageที่ไม่ทำงานด้วย
+docker inspect testเเล้วดูLogPath สมมุติ = /var/lib/docker/containers/c87560277ad2ac5b72c6377fa98df1d444e8f5460cfe95abb6922a9aec77b403/c87560277ad2ac5b72c6377fa98df1d444e8f5460cfe95abb6922a9aec77b403-json.log
+ดูlogpath
+sudo cat /var/lib/docker/containers/c87560277ad2ac5b72c6377fa98df1d444e8f5460cfe95abb6922a9aec77b403/c87560277ad2ac5b72c6377fa98df1d444e8f5460cfe95abb6922a9aec77b403-json.log
+docker exec -it test bash <==ทำให้update เช่นpip install numpyก็จะอัพเดทnumpyในcontainerนั้นๆ
+docker stop test<== หยุดการทำงานของcontainerนั้นๆ
+docker rm test<==ลบcontainer test
+
+https://github.com/dockerfile/nginx/blob/master/Dockerfile <==ทำให้ย้ายไปอืกเครื่องได้เลย
